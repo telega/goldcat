@@ -1,0 +1,15 @@
+{
+  "name": "goldcat",
+  "version": "1.0.0",
+  "description": " tools for building the Goldsmiths degree show catalogue with Metalsmith",
+  "main": "goldcat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tom Allen <tom@telega.org>",
+  "license": "MIT"
+}
