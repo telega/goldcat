@@ -17,7 +17,7 @@ var makePages = function(options){
 
 	return function (files, metalsmith, done){
 		
-		console.log('Preparing student pages ...'.yellow);
+		console.log('Preparing student pages ...');
 
 		for(var file in files){
 			var fileObject = files[file];
@@ -151,7 +151,7 @@ var studentDirectory = function(options){
 
 	return function (files, metalsmith, done){
 		
-		console.log("Setting variable for student directory (index) page....".yellow);
+		console.log("Setting variable for student directory (index) page....");
 		var metadata = metalsmith._metadata;
 		var numStudents = metadata.students.length;
 		var numStudentsEachCol = Math.ceil(numStudents/4);
@@ -180,9 +180,9 @@ var nextStudent = function(options){
 
 	return function (files, metalsmith, done){
 
-      console.log('Configuring inter-student navigations...'.yellow);
+      console.log('Configuring inter-student navigation...');
 	var firstStudentPath, lastStudentPath, firstStudent, lastStudent;
-      console.log('finding first student...'.green);
+      console.log('finding first student...');
         // Loop through files
         Object.keys(files).forEach(function(file){
             // Create a new file with the contents of the original
@@ -196,7 +196,7 @@ var nextStudent = function(options){
 
             	if(lastStudentPath == undefined){
             		//in this case, we still need to find the last student!
-            		console.log('finding last student...'.green);
+            		console.log('finding last student...');
 
             		Object.keys(files).forEach(function(file2){
 
@@ -224,7 +224,7 @@ var nextStudent = function(options){
         });
 
 
-console.log('Building links...'.yellow);
+console.log('Building links...');
 
         //NOW EVERYTHING should have a previous and next, set 'Child' Pages.
         Object.keys(files).forEach(function(file){

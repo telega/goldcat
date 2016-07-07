@@ -1,6 +1,6 @@
 {
   "name": "goldcat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " tools for building the Goldsmiths degree show catalogue with Metalsmith",
   "main": "goldcat.js",
   "scripts": {
@@ -8,8 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com/telega/goldcat.git"
   },
   "author": "Tom Allen <tom@telega.org>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "showdown": "^1.4.2"
+  }
 }
